@@ -4,7 +4,7 @@
 
 # Live Demo
 You can view the live demo of the project at 
-# [Simple Stopwatch APP LIVE](https://hassan-ghorab.github.io/Countdown-Timer/)
+# [Countdown Timer APP LIVE](https://hassan-ghorab.github.io/Countdown-Timer/)
 
 # Technologies Used
 - HTML
