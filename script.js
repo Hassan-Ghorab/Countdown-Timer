@@ -130,7 +130,6 @@ startIcon.addEventListener("click", (e) => {
     if (interval == null) {
       interval = setInterval(function () {
         startDownTimer();
-        console.log("working");
       }, 1000);
     }
   }
