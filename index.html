@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="
+      A Countdown timer app to use it to track your time or 
+      to count time for anyone around you it's a useful tool so use it.
+      "
+    />
+    <link
+      id="favicon"
+      rel="icon"
+      sizes="100x100"
+      type="image/png"
+      href="./favicon.png?v=0"
+    />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="./fontello/css/fontello.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1 class="main-title">Countdown Timer</h1>
+    <div class="container flex">
+      <div class="time-values">
+        <div class="inputs">
+          <input
+            type="number"
+            id="hours-input"
+            class="input"
+            placeholder="Hours"
+          />
+          <input
+            type="number"
+            id="minutes-input"
+            class="input"
+            placeholder="Minutes"
+          />
+          <input
+            type="number"
+            id="seconds-input"
+            class="input"
+            placeholder="Seconds"
+          />
+        </div>
+
+        <p class="message ds-none">You must enter Time</p>
+
+        <button id="enter-time" class="enter-time">Enter Time</button>
+      </div>
+
+      <div class="time-container flex">
+        <p class="minus-sign">-</p>
+        <div class="time">
+          <div>
+            <h2 id="hours" class="time-number">00</h2>
+            <h2>Hrs</h2>
+          </div>
+          <i class="icon-pause icon"></i>
+        </div>
+        <div class="time">
+          <div>
+            <h2 id="minutes" class="time-number">00</h2>
+            <h2>Min</h2>
+          </div>
+          <i class="icon-play icon"></i>
+        </div>
+        <div class="time">
+          <div>
+            <h2 id="seconds" class="time-number">00</h2>
+            <h2>Sec</h2>
+          </div>
+          <i class="icon-arrows-cw icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-container" class="popup-container ds-none">
+      <div id="popup-overlay" class="popup-overlay"></div>
+      <div class="popup-card">
+        <h2>Time is up!</h2>
+        <p>
+          We are here! your time is finished.<br />
+          Want to start over again?
+        </p>
+        <button id="close-popup" class="close-popup">Close</button>
+      </div>
+    </div>
+
+    <audio id="countdown-finished-sound" class="audio">
+      <!-- <source src="horse.ogg" type="audio/ogg" /> -->
+      <source src="countdown-sound.mp3" type="audio/mpeg" />
+    </audio>
+  </body>
+</html>
